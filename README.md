@@ -16,13 +16,16 @@ The vocabulary size used for TF-IDF+LR is 4000 because larger vocabulary size wo
 * Testing sequence length: 450. Longer testing sequence length yields better performance.
 
 Besides, four settings of hyperparameters are tested. Table 1 shows the settings and best setting is bolded.
-![table1](images/table1.png)
+
+<img src="images/table1.png" width="50%">
 
 # Result
 
 Experiment results are illustrated in Table 5. We compare all three models with baseline models BOW and TF-IDF+LR. The test accuracy of baseline models is quite high already, especially for TF-IDF+LR. It is reasonable as we have a lot of training data. It also illustrates that we can achieve acceptable sentiment classification results using only word distribution. However, we definitely need sequential information to better distinguish more complicated expressions such as phrases or metaphors.
 All three models improve around 3% over baseline models which illustrates that word order information contributes to sentence sentiment classification. Att-LSTM with 500 hidden unites and 2 layers achieves best test accuracy among three models
-![table4](images/table5.png)
+
+<img src="images/table5.png" width="70%">
+
 
 # Description of Files
 There are six folders containing the implemented models:
